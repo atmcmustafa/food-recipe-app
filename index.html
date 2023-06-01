@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recipe App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-slate-800 text-white p-4 xs:p-0">
+    <div class="container mx-auto">
+      <div class="mx-auto w-full max-w-xl">
+        <h1 class="text-center text-2xl mb-4">Search a Recipe</h1>
+        <div class="flex gap-3">
+          <input
+            id="input"
+            class="w-full rounded-md px-4 text-black focus:outline-0"
+            type="text"
+            placeholder="Search a recipe"
+          />
+          <button
+            id="button"
+            type="submit"
+            class="px-6 py-2 bg-blue-600 rounded-md"
+          >
+            Search
+          </button>
+        </div>
+        <h3 class="text-center text-3xl w-full error-msg mt-5"></h3>
+      </div>
+
+      <!-- food recipe's -->
+      <div
+        class="food-wrapper rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8 gap-4 duration-300"
+      ></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
